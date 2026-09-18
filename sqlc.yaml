@@ -1,0 +1,24 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    schema: "internal/platform/db/migrations/*.up.sql"
+    queries: "internal/modules/iam/query.sql"
+    gen:
+      go:
+        package: "iam"
+        out: "internal/modules/iam/sqlc"
+        sql_package: "database/sql"
+        emit_json_tags: true
+        emit_db_tags: true
+        emit_empty_slices: true
+  - engine: "postgresql"
+    schema: "internal/platform/db/migrations/*.up.sql"
+    queries: "internal/modules/tasks/query.sql"
+    gen:
+      go:
+        package: "tasks"
+        out: "internal/modules/tasks/sqlc"
+        sql_package: "database/sql"
+        emit_json_tags: true
+        emit_db_tags: true
+        emit_empty_slices: true

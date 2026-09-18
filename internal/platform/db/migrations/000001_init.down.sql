@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS public.task_logs CASCADE;
+DROP TABLE IF EXISTS public.tasks CASCADE;
+DROP TABLE IF EXISTS public.audit_logs CASCADE;
+DROP TABLE IF EXISTS public.outbox_events CASCADE;
+DROP TABLE IF EXISTS public.idempotency_keys CASCADE;
+DROP TABLE IF EXISTS iam.sessions CASCADE;
+DROP TABLE IF EXISTS iam.users CASCADE;
+DROP SCHEMA IF EXISTS iam CASCADE;
+DROP FUNCTION IF EXISTS public.uuid_generate_v7();

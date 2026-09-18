@@ -1,0 +1,51 @@
+# Binaries and build outputs
+/bin/
+dist/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Dependencies and caches
+vendor/
+node_modules/
+.turbo/
+*.tsbuildinfo
+
+# Test coverage outputs
+*.cover
+*.coverage
+coverage.txt
+coverage.out
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# OS and Editor metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Log files and temporary files
+*.log
+/tmp/
+/temp/
+
+# Tool and agent runtime caches
+.pi/
+scratch/
+
+# Binary archives and compressed artifacts
+*.zip
+*.tar
+*.tar.gz
+*.tgz
